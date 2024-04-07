@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    color: #f1f1f1;
+    font-family: "Reddit Mono", monospace;
+    margin-top: 100px;
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.about-row img {
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text>p {
+    width: 50rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pattern {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+}
+
+.pattern p {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.pattern:hover {
+    transform: scale(1.08);
+}
+
+.loader {
+    border: 1px solid transparent;
+    height: 10px;
+    background-image: linear-gradient(to right, #c94cb9, #df7c37);
+    border-radius: 40px;
+    align-self: center;
+}
+
+.l1 {
+    width: 40rem;
+}
+
+.l2 {
+    width: 30rem;
+}
+
+.l3 {
+    width: 27rem;
+}
+
+.l4 {
+    width: 25rem;
+}
+
+.exp {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.exp-pattern {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.exp-pattern>:nth-child(1) {
+    background-image: linear-gradient(to right, #c94cb9, #df7c37);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.exp-pattern p {
+    font-size: 25px;
+}
+
+.bar {
+    border: 1px solid #f1f1f1;
+    height: 5rem;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width:900px) {
+    .about{
+        padding: 5px;
+    }
+    .about-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-row p{
+        width: auto;
+        text-align: center;
+    }
+
+    .exp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar{
+        display: none;
+    }
+    .l1,.l2,.l3,.l4{
+        width: 200px;
+    }
+
+}
